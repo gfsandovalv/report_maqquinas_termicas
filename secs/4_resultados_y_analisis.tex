@@ -7,35 +7,41 @@ A partir de los datos medidos (temperatura y voltajes) se obtienen las potencias
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width = 0.8\linewidth]{img/gen_powers.png}
+    \includegraphics[width = 0.6\linewidth]{img/gen_powers.png}
     \caption{Potencias medidas para el módulo térmico usado como generador térmico. Los datos de $P_{open}$ se midieron en un rango distinto de temperatura y con una escala más fina (décimas de grado).}
     \label{fig:gen_powers}
 \end{figure}
 
-Ahora, calculando las eficiencias (nominal, de carnot y corregidas) se obtienen lo mostrado en la figura \ref{fig:etas}. Con esto se tienen más criterios para juzgar los datos. Se puede argumentar que los datos obtenidos para la potencia disipiada por la resistencia interna $P_Ri$ están siendo sobre estimados, pues los valores obtenidos para $\eta^{\prime\prime}$ son mucho mayores a la eficiencia de Carnot, incluso se obtiene valores mayores a 1, por lo que en este caso, esta medición no se considera físicamente correcta.
+Ahora, calculando las eficiencias (nominal, de carnot y corregidas) se obtienen lo mostrado en la figura \ref{fig:etas}. Con esto se tienen más criterios para juzgar los datos. Se puede argumentar que los datos obtenidos para la potencia disipiada por la resistencia interna $P_{R_i}$ están siendo sobre estimados, pues los valores obtenidos para $\eta^{\prime\prime}$ son mucho mayores a la eficiencia de Carnot, incluso se obtiene valores mayores a 1, por lo que en este caso, esta medición no se considera físicamente correcta. 
 
 % etas
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width = 0.8\linewidth]{img/gen_etas.png}
+    \includegraphics[width = 0.6\linewidth]{img/gen_etas.png}
     \caption{Comparación de las diferentes eficiencias calculadas como función de la diferencia de temperatura}
     \label{fig:etas}
 \end{figure}
 
 \subsection{Refrigerador}
 
+De forma similar, se calculan las potencias involucradas en el montaje de refrigerador con el módulo Peltier. Se observa en la figura \ref{fig:refri_powers} naturalmente que se requiere una mayor cantidad de energía para lograr una diferencia de temperatura cada vez menor. 
+
 \begin{figure}[ht]
     \centering
-    \includegraphics[width = 0.8\linewidth]{img/refri_powers.png}
+    \includegraphics[width = 0.5\linewidth]{img/refri_powers.png}
     \caption{Potencias medidas para el módulo térmico usado como refrigerador. Se usa la misma recta de $P_{open}$ usada en el montaje anterior.}
     \label{fig:refri_powers}
 \end{figure}
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width = 0.8\linewidth]{img/refri_cops.png}
+    \includegraphics[width = 0.5\linewidth]{img/refri_cops.png}
     \caption{Comparación de los coeficientes de rendimiento.}
     \label{fig:refri_cops}
 \end{figure}
+
+\subsection{Ley de fourier para el módulo}
+
+Sabiendo que el módulo está construido de 162 celdas de $\SI{6}{\milli\meter\squared}$ y que tiene un espesor de $\SI{2.5}{\milli\meter}$, se tiene que el coeficiente de conductividad térmica del módulo es $\SI{0.843}{\watt\per\meter\per\celsius}$
 
