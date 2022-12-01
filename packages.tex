@@ -1,0 +1,42 @@
+\usepackage{biblatex}
+\addbibresource{referencias.bib}
+
+\usepackage{hyperref}
+\usepackage[spanish, es-tabla]{babel}
+
+\usepackage{authblk}
+\renewcommand\Authand{ y }
+\renewcommand\Authands{, y }
+\renewcommand*{\Authfont}{\bfseries}
+%% Page settings
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{lipsum}
+\usepackage{wrapfig}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\DeclareSIUnit{\calorie}{cal}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\usepackage[table]{xcolor}
+\renewcommand{\d}{\text d}
+\newcommand{\dd}[2]{\frac{\d #1}{\d #2}}
+\newcommand{\ddp}[2]{\frac{\partial #1}{\partial #2}}
+
+\newcommand{\myfigure}[4][0.65]{%
+    \vspace{1em}
+    \noindent\begin{minipage}{\linewidth}%
+        \makebox[\linewidth]{%   For centring figures
+            \includegraphics[width=#1\linewidth]{#2}}
+        \captionof{figure}{#3}
+        \label{#4}
+    \end{minipage} 
+    \vspace{0.5em}}
+
+\usepackage{amsfonts}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
