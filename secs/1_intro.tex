@@ -24,4 +24,53 @@ Según Planck, es imposible construir un motor que, trabajando según un ciclo c
 \subsection{Ciclo de Carnot}
 Este es un ciclo termodinámico que se produce una maquina cuando trabajo absorbiendo una cantidad de calor de una fuente de mayor temperatura cede calor a una de menor temperatura produciendo un trabajo. 
 
-Este ciclo está conformado por 4 procesos, el primero es una expansión isoterma ( A $$ B), después una expansión adiabática(B ! C), después una comprensión isoterma (C ! D) y por ultimo una compresión adiabática ( D ! A). La máxima eﬁciencia de este ciclo está dada por:
+Este ciclo está conformado por 4 procesos, el primero es una expansión isoterma ( A $\rightarrow$ B), después una expansión adiabática (B $\rightarrow$ C), después una comprensión isoterma (C $\rightarrow$ D) y por ultimo una compresión adiabática ( D $\rightarrow$ A). La máxima eﬁciencia de este ciclo está dada por:
+\begin{equation}
+    \eta_{Carnot}=\frac{T_H-T_C}{T_H}
+\end{equation}
+La eficicencia para una máquina térmica real es menor que esta dadas las pérdidas por fricción, conducción, radiación y calentamiento.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{img/carnot.png}
+    \caption{Ciclo de Carnot en diagrama P y V}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{Frigoríficos}
+Un frigoríﬁco es una máquina que funciona en sentido contrario a una maquina térmica, de tal forma que extrae calor de la fuente fría a la fuente caliente.
+
+La eﬁciencia de esas maquinas se deﬁna de forma distinta las maquinas térmicas. Se deﬁne el coeﬁciente de rendimiento (COP por sus siglas en ingles), el cual es la razón entre el calor bombeado de la fuente fría y el trabajo requerido para realizarlo, entonces:
+\begin{equation}
+    k=COP=\frac{Q_c}{W}=\frac{P_c}{P_W}
+\end{equation}
+También podemos hablar de una eficiencia máxima o eficiencia de carnot para frigoríficos dada por:
+
+\begin{equation}
+    k_{Max}=\frac{T_C}{T_H-T_C}
+\end{equation}
+
+\subsection{Motor de Stirling}
+Un motor Stirling es un motor térmico operando por compresión y expansión cíclica de aire u otro gas, llamado ﬂuido de trabajo, a diferentes niveles de temperatura tales que se produce una conversión neta de energía caloríﬁca a energía mecánica.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{img/stirling.png}
+    \caption{Ciclo de un motor Stirling en diagrama P y V}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{Módulo termoeléctrico}
+Un modulo termoeléctrico es un dispositivo que basado en el efecto Seebeck, efecto Peltier y efecto Thomson crea un ﬂujo térmico a través de la unión de dos materiales diferentes.
+
+\begin{itemize}
+    \item \textbf{Efecto Seebeck:}\\ cuando se forma un circuito
+cerrado a partir de dos materiales distintos y se mantienen bajo las uniones una diferencia de temperatura, se produce una corriente electrica denominada termocorriente,la cual depende de la temperatura relativa entre los contactos y la naturaleza de los materiales. La diferencia de potencial a lo largo del circuito esta dada de la forma:
+\begin{equation*}
+    \Delta V = \oint_T^{T+\Delta T} (S_A-S_B)dT
+\end{equation*}
+Dónde S se define como el coeficiente de Seebeck, $S=-(\frac{dV}{dT})_T$
+\item \textbf{Efecto Peltier:}\\ Este efecto realiza la acción inversa al efecto Seebeck. Consiste en la creación de una diferencia
+térmica a partir de una diferencia de potencial eléctrico. Ocurre cuando una corriente pasa a través de dos metales diferentes o semiconductores (tipo-n y tipo-p) que están conectados entre sí
+en dos soldaduras (uniones Peltier). La corriente produce una transferencia de calor desde una unión, que se enfría, hasta la otra, que se calienta.
+\item \textbf{Efecto Thomson:}\\ El efecto Thomson fue predicho y luego observado experimentalmente por William Thomson (Lord Kelvin) en 1851. Describe el calentamiento o enfriamiento de un conductor portador de corriente con un gradiente de temperatura.
+
+\end{itemize}
