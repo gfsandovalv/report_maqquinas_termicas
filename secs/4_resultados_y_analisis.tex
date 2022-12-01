@@ -1,13 +1,18 @@
 \section{Resultados y análisis}
 
+A continuación se muestran las potencias calculadas a partir de los datos experimentales para cada montaje. 
 \subsection{Generador Termoeléctrico}
-Una vez realizada la regresión de los datos de $P_open$ se usa la relación lineal obtenida en el rango de temperaturas que en el que se midieron los demás parámetros. Es decir, se obtuvo $P_{open} = P_{open}(\Delta T)$ y se evaluó en el rango de $\Delta T = 0 - 40 \si{\celsius}$
+
+A partir de los datos medidos (temperatura y voltajes) se obtienen las potencias, aplicada $P_A$, de carga $P_L$ y disipada por la resistencia interna $P_{R_i}$. Además, se interpolan los valores de $P_{open}$ usando una regresión de los datos suministrados. Estos datos se tomaron usando una escala de temperatura con precisión de décimas de grado y un rango de diferencia de temperatura  $\Delta T = 0 - 40 \si{\celsius}$. Estos valores se muestran en la figura \ref{fig:gen_powers}. Se observa que los datos de $P_A$ tienen un comportamiento escalonado, esto debido a que al aplicar una diferencia de potencial a la resistencia de carga, se debía dejar transcurrir un tiempo hasta observar la temperatura máxima alcanzada por la resistencia de calentamiento, y en ese tiempo, por lo que se registraron varios datos para un mismo voltaje aplicado. De la gráfica \ref{fig:gen_powers} también se puede corroborar que los datos obtenidos para las demás potencias son menores a la potencia aplicada, corroborando que la energía útil en efecto es menor que la energía suministrada, en concordancia con la segunda ley.
+
 \begin{figure}[ht]
     \centering
     \includegraphics[width = 0.8\linewidth]{img/gen_powers.png}
     \caption{Potencias medidas para el módulo térmico usado como generador térmico. Los datos de $P_{open}$ se midieron en un rango distinto de temperatura y con una escala más fina (décimas de grado).}
-    \label{fig:powers}
+    \label{fig:gen_powers}
 \end{figure}
+
+Ahora, calculando las eficiencias (nominal, de carnot y corregidas) se obtienen lo mostrado en la figura \ref{fig:etas}. Con esto se tienen más criterios para juzgar los datos. Se puede argumentar que los datos obtenidos para la potencia disipiada por la resistencia interna $P_Ri$ están siendo sobre estimados, pues los valores obtenidos para $\eta^{\prime\prime}$ son mucho mayores a la eficiencia de Carnot, incluso se obtiene valores mayores a 1, por lo que en este caso, esta medición no se considera físicamente correcta.
 
 % etas
 
